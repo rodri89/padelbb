@@ -40,6 +40,16 @@
   #sidebarToggleTop:hover {
     color: #2e59d9;
   }
+  @media (max-width: 767.98px) {
+    #accordionSidebar:not(.toggled) {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1050;
+      height: 100vh;
+      overflow-y: auto;
+    }
+  }
 </style>
 
 @include('modal.snackbar')
@@ -438,6 +448,7 @@
   <!-- Custom scripts for all pages-->
   <script src="{{ asset('js/sb-admin-2.min.js') }}"></script>
   <script type="text/javascript">
+    // sb-admin-2.min.js también registra toggle del sidebar; lo reemplazamos por toggleSidebar().
     $('#sidebarToggle, #sidebarToggleTop').off('click').on('click', function (e) {
       e.preventDefault();
       toggleSidebar();

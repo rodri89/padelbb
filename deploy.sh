@@ -36,6 +36,17 @@ ARTISAN_CMD="$PHP_BIN artisan"
 echo "📦 Instalando dependencias..."
 $COMPOSER_CMD install --no-dev --optimize-autoloader --ignore-platform-req=ext-sodium --no-interaction
 
+echo "🎨 Construyendo assets frontend (jQuery/Bootstrap)..."
+if command -v npm >/dev/null 2>&1; then
+    cd public
+    npm install
+    npx gulp build
+    cd ..
+    echo "   ✅ Assets frontend generados"
+else
+    echo "   ⚠️  npm no disponible; se usan los assets versionados en public/vendor"
+fi
+
 echo "🧹 Limpiando cachés..."
 $ARTISAN_CMD config:clear
 $ARTISAN_CMD cache:clear

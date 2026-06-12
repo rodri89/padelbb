@@ -1,6 +1,6 @@
 # 🧪 Prueba de Despliegue Automático
 
-**Último despliegue:** $(date '+%Y-%m-%d %H:%M:%S')
+**Último despliegue:** 2026-06-12 17:40:00 - Fix admin bp_admin (vendor jQuery/Bootstrap + menú hamburguesa)
 
 Este archivo se crea para probar que el despliegue automático funciona correctamente.
 
