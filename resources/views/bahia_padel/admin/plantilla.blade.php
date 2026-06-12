@@ -22,6 +22,8 @@
   <link href="{{ asset('css/dark-mode.css') }}" rel="stylesheet">
 
   <meta name="csrf-token" content="{{ csrf_token() }}">
+  <script src="{{ asset('vendor/jquery/jquery.min.js') }}"></script>
+  <script src="{{ asset('vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
   @stack('head')
 </head>
 
@@ -438,10 +440,6 @@
 }
 
   </script>
-  <!-- Bootstrap core JavaScript-->
-  <script src="{{ asset('vendor/jquery/jquery.min.js') }}"></script>
-  <script src="{{ asset('vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-
   <!-- Core plugin JavaScript-->
   <script src="{{ asset('js/jquery.easing.min.js') }}"></script>
 
