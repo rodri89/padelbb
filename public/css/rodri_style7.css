@@ -1,0 +1,1299 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,200i,300,300i,400,400i,500,500i,600,600i,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,200i,300,300i,400,400i,500,500i,600,600i,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+.width_200px{
+  width: 200px;
+}
+
+.margin_right_5px{
+  padding-right: 15px;
+  color: red;
+}
+
+.fondoNavActive{
+  background: #474646;
+  height: 20px;
+  }
+
+.myModal_body_rodri{
+  padding:30px 40px 30px 40px;
+  background-color:#1E253F;
+  border-left:1px solid #007DCF;
+  border-right:1px solid #007DCF;
+}
+
+.contenedor_centrado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.margin_left_50px{
+  margin-left: 50px;
+}
+
+.margin_bottom_50px{
+  margin-bottom: 50px;
+}
+
+.active_services_size{
+  height: 10%;
+  width: 10%; 
+}
+
+.active_services_size_logo{
+  height: 15%;
+  width: 15%; 
+}
+
+.margin_top_50px{
+  margin-top: 70px;
+}
+
+.active_color{
+  background: #0095db;
+}
+
+.hijo_centrado {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.circulo_rojo_receta {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin:0px auto;
+  padding:3%;    
+}
+
+.circulo_rojo_receta > h2 {
+  margin-top: 7px;
+  font-family: "Lato","Poppins", sans-serif;
+  color: white;
+  font-size: 0.5rem;
+  font-weight: bold;
+}
+
+.float_right{
+  float: right;
+}
+
+.inline_block{
+  display: inline-block;
+}
+
+  .marginLeft5px{
+    margin-left: 5px;
+  }
+
+.admin_videollamada_sobreturno{
+  visibility: visible; 
+}
+
+.admin_videollamada_sobreturno_cel{
+  visibility: hidden; 
+}
+
+.mercadopago_collapse_250px{
+ width: 250px; 
+}
+
+.mercadopago_collapse_70px{
+ width: 70px; 
+}
+
+.mercadopago_collapse_150px{
+ width: 150px; 
+}
+
+.mercadopago_collapse_100px{
+ width: 100px;  
+}
+
+.mercadopago_collapse_30px{
+ width: 30px; 
+}
+
+.botonImage {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.botonImage:hover {opacity: 0.7;}
+
+img.mediana{
+  width: 100px; height: 100px;
+}
+
+.mercadoPagoHeader{
+  height:35px
+}
+
+.mercadoPagoHeaderTO{
+  margin-left: 50px;
+  margin-top: 250px;
+}
+
+h4.rodri{
+	size:1000px;
+}
+
+.centrarVerticalHorizontalCancelar {
+    /**display: inline;   */
+      display: inline-flex;   
+      align-items: center;
+}
+
+.circulo {
+	width: 10rem;
+	height: 10rem;
+	border-radius: 50%;
+	background: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+  margin:0px auto;
+  padding:3%;
+  border-style: solid;
+  border-color: #91e842;
+}
+
+.circulo_ocupado{
+/*background: gray;*/
+border-color: red;
+}
+
+.circulo > h2 {
+	font-family: "Lato","Poppins", sans-serif;
+	color: black;
+	font-size: 1.4rem;
+	font-weight: bold;
+}
+
+.col-center{
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.col-centrada{
+    float: none;
+    margin: 0 auto;
+}
+
+.rodri_button_agenda{
+  background: white;
+  border: none;
+  width: 120px;  
+  height: 25px;
+}
+
+.rodri_input_error{
+  background: transparent;
+  border: none;
+  color: red;  
+}
+
+.rodri_button_volver{
+  background: white;
+  border-style: solid; 
+  width: 120px;  
+  border-radius: 120px 120px 120px 120px;
+  -moz-border-radius: 120px 120px 120px 120px;
+  -webkit-border-radius: 120px 120px 120px 120px;
+  border: 1px solid #999999;
+  height: 35px;
+}
+
+.rodri_button_aceptar{
+  background: white;
+  border-style: solid; 
+  width: 120px;  
+  border-radius: 120px 120px 120px 120px;
+  -moz-border-radius: 120px 120px 120px 120px;
+  -webkit-border-radius: 120px 120px 120px 120px;
+  border: 1px solid #03f237;
+  height: 35px;
+}
+
+.rodri_button_cancelar{
+  background: white;
+  border-style: solid;  
+  width: 120px;  
+  border-radius: 120px 120px 120px 120px;
+  -moz-border-radius: 120px 120px 120px 120px;
+  -webkit-border-radius: 120px 120px 120px 120px;
+  border: 1px solid red;
+  height: 35px;
+}
+
+.rodri_button_aceptar_si{
+  background: white;
+  border-style: solid; 
+  width: 35px;  
+  border-radius: 120px 120px 120px 120px;
+  -moz-border-radius: 120px 120px 120px 120px;
+  -webkit-border-radius: 120px 120px 120px 120px;
+  border: 1px solid #03f237;
+  height: 35px;
+}
+
+.rodri_button_cancelar_no{
+  background: white;
+  border-style: solid;  
+  width: 35px;   
+  border-radius: 120px 120px 120px 120px;
+  -moz-border-radius: 120px 120px 120px 120px;
+  -webkit-border-radius: 120px 120px 120px 120px;
+  border: 1px solid red;
+  height: 35px;
+}
+
+.rodri_button_cancelar_a{
+   background: white;
+   border-style: solid;  
+   border: 1px solid red;
+}
+
+.rodri_button_calendario{
+  background: transparent;
+  width: 35px;     
+  height: 35px;
+  border-radius: 120px 120px 120px 120px;
+  -moz-border-radius: 120px 120px 120px 120px;
+  -webkit-border-radius: 120px 120px 120px 120px;
+}
+
+.rodri_button_receta{
+  background: transparent;
+  width: 40px;     
+  height: 40px;
+  border-radius: 120px 120px 120px 120px;
+  -moz-border-radius: 120px 120px 120px 120px;
+  -webkit-border-radius: 120px 120px 120px 120px;
+}
+
+body {
+  font-family: "Lato","Poppins", sans-serif;
+  background-color: #f8f7fa;
+  color: #333;
+}
+
+.addBorder{
+  	border-style: solid;
+	border-color: black;
+}
+
+.rpadding{
+	padding: 25px;
+}
+
+.smalltextslogin{
+	color:#FFF;
+}
+
+.centrarVerticalHorizontal {
+   display: flex;   
+   align-items: center;
+}
+
+.flotante {
+    display:scroll;
+    position:fixed;
+    bottom:25px;
+    right:25px;
+}
+
+.footer_flotante {
+    display:scroll;
+    position:fixed;
+    bottom:-50px;
+}
+
+.widthImageCarousel{
+    width: 100%;
+  }
+
+.flotante_secretaria {
+    display:scroll;
+    position:fixed;
+    bottom:50px;
+    right:25px;
+}
+
+.pie_pagina {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 300px;
+    background-color: black;
+}
+
+.sinBackground{
+  background-color: transparent;
+  border: none;
+}
+
+.sinBackgroundAncho{
+  background-color: transparent;
+  border: none;
+  width: 480px;
+}
+
+.domicilio{
+  margin-left: 5px;
+  width: 300px;
+}
+
+.sinBackgroundMedioAncho{
+  background-color: transparent;
+  border: none;
+  width: 200px;
+}
+
+.sinBackgroundMp{
+  background-color: transparent;
+  border: none;
+  width: 92px;
+}
+
+.sinBackgroundAnchoFechaDNI{
+  background-color: transparent;
+  border: none;
+  width: 120px;
+}
+
+.tr_amarillo {
+  background-color: #F8DF73;
+}
+
+.sinBackgroundAzul{
+  background-color: transparent;
+  border: none;
+  color:blue;
+  text-decoration: underline;
+}
+
+.terminosCondicionesSize{
+  margin-left: 5%;
+  margin-right: 5%;
+  color: white; 
+  font-size: x-small;
+}
+
+.input_snackbar{
+  border: none;
+  font-weight:bold; 
+  color: #FFF;
+  width: 42px;  
+  background: #333;
+}
+
+.letraAzul {
+   color:#303F9F;
+}
+
+.input_snackbar_220{
+  border: none;
+  font-weight:bold; 
+  text-align: center;
+  color: #FFF;
+  width: 220px;  
+  background: #333;
+}
+
+.modal_input_horario{
+  border: none;
+  font-weight:bold; 
+  width: 50px;  
+}
+
+.input_configuracion_horario{ 
+  text-align: center;
+  width: 60px;  
+}
+
+.rodri_button_a{
+  background: red;  
+  border-radius: 120px 120px 120px 120px;  
+  border: 1px solid #03f237; 
+  
+}
+
+.rodri_button{
+  width: 160px;
+  background: linear-gradient(45deg, rgba(44,123,144,1) 0%, rgba(44,123,144,1) 16%, rgba(42,108,126,1) 36%, rgba(0,77,69,1) 100%);
+  border-radius: 120px 120px 120px 120px;
+-moz-border-radius: 120px 120px 120px 120px;
+-webkit-border-radius: 120px 120px 120px 120px;
+border: 1px solid #03f237;
+color:#FFF;
+height: 35px;
+}
+
+.rodri_button_active{
+  width: 160px;
+  background: #0095db;
+  border-radius: 120px 120px 120px 120px;
+  -moz-border-radius: 120px 120px 120px 120px;
+  -webkit-border-radius: 120px 120px 120px 120px;
+  border: 1px solid #0095db;
+  color:#FFF;
+  height: 35px;
+}
+
+.rodri_button_login{
+  width: 160px;
+  background: linear-gradient(45deg, rgba(44,123,144,1) 0%, rgba(44,123,144,1) 16%, rgba(42,108,126,1) 36%, rgba(0,77,69,1) 100%);
+  border-radius: 120px 120px 120px 120px;
+-moz-border-radius: 120px 120px 120px 120px;
+-webkit-border-radius: 120px 120px 120px 120px;
+border: 1px solid #03f237;
+color:#FFF;
+height: 35px;
+}
+
+.loginHeader{
+    font-size: 1.0rem;
+    margin-left: 0px;
+    margin-top: 0px; 
+  }
+
+  .loginHeaderSize{
+    height: 20px;
+  }
+
+.rodri_button_large{
+  width: 260px;
+  background: linear-gradient(45deg, rgba(44,123,144,1) 0%, rgba(44,123,144,1) 16%, rgba(42,108,126,1) 36%, rgba(0,77,69,1) 100%);
+  border-radius: 120px 120px 120px 120px;
+-moz-border-radius: 120px 120px 120px 120px;
+-webkit-border-radius: 120px 120px 120px 120px;
+border: 1px solid #03f237;
+color:#FFF;
+height: 35px;
+}
+
+.rodri_button_disabled{
+  width: 160px;
+  background: grey;
+  border-radius: 120px 120px 120px 120px;
+-moz-border-radius: 120px 120px 120px 120px;
+-webkit-border-radius: 120px 120px 120px 120px;
+border: 1px solid #03f237;
+color:#FFF;
+height: 35px;
+}
+
+.fondoHeader{
+  /*background: linear-gradient(to right, rgba(210,255,82,1) 0%, rgba(145,232,66,1) 100%);*/
+ background: linear-gradient(45deg, rgba(147,206,222,1) 0%, rgba(147,206,222,1) 16%, rgba(117,189,209,1) 36%, rgba(0,150,136,1) 82%, rgba(0,150,136,1) 100%);
+}
+
+hr.style4 {
+  border-top: 1px dotted #8c8b8b;
+}
+
+.fontColorHeader{
+  /*color:#388E3C;*/
+  color:#303F9F;
+}
+
+.fontTitulo{
+  font-size: 3.4rem;
+  color:#303F9F;
+}
+
+.fontHomeTitulo{
+  font-size: 2.4rem;
+  color:#303F9F;
+}
+
+.fontVideollamadaTitulo{
+  font-size: 2.4rem;
+  color:#303F9F;
+}
+
+.fontHomeSubtitulo{
+  font-size: 1.9rem;
+  color:#303F9F; 
+}
+
+.fontHomeBody{
+  font-size: 1.5rem;
+  color:#303F9F;
+}
+
+.fontColorHeaderParrafo{
+ color:#FFF;
+ opacity: 10; 
+}
+
+.footerBackground{
+  background: #474646;
+  /*background: linear-gradient(45deg, rgba(44,123,144,1) 0%, rgba(44,123,144,1) 16%, rgba(42,108,126,1) 36%, rgba(0,77,69,1) 100%);*/
+}
+
+.fondoNav{
+  /*background: #388E3C;*/
+  background: #474646;/*linear-gradient(45deg, rgba(44,123,144,1) 0%, rgba(44,123,144,1) 16%, rgba(42,108,126,1) 36%, rgba(0,77,69,1) 100%);*/
+}
+
+.fontNav{
+  color:#FFF; 
+}
+
+.fontContainer{
+  background: #C8E6C9;
+}
+
+.contenedor3 {
+        display: flex;
+        align-items: center;
+}
+.contenido3 {
+        margin: 0 auto; /* requerido para alineación horizontal */
+
+}
+
+.alinearHorizontal{
+  display: inline-block;
+}
+
+.letrasrojo{
+  color:red;
+}
+
+.letrasVerde{
+  color:green;
+}
+
+.letrasblancas{
+  color:white;
+}
+
+.img-responsive{
+    width:100%;
+    height:auto;
+}
+
+.r_inline{
+  display: inline-block;
+}
+
+.img_home_2{
+  width: 250px;
+  height: 250px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.img_obra_social{
+  width: 250px;
+  height: 100px;
+}
+
+.img_home{
+  width: 149px;
+  height: 149px;
+  margin-right: 20px;
+  margin-left: 20px;
+} 
+  .margin5{
+    margin-left: 5px;
+  }
+
+ .fechaNacEditText{
+    margin-left: 10px;
+    width: 50px;
+  }
+  .fechaNacAnioEditText{
+    margin-left: 10px;
+    width: 100px;
+  }
+
+  .img_turno_apl{
+    width: 100px;
+    height: 100px;
+    font-size: 0.5rem;  
+  }
+
+  .turno_text_size_apl{
+    font-size: 1.0rem;
+  }
+
+  .visibleLoginCel{
+    visibility: hidden;
+  }
+
+ .botonReceta{
+  margin-left: 25px;  
+ }
+ .textoReceta{
+  margin-top: 4px;
+  margin-left: 35px;
+ }
+
+@media (max-width:360px){
+  .widthImageCarousel{
+    width: 360px;
+  }
+
+  .width200px{
+    width: 300px;
+  }
+
+  .botonReceta{
+    margin-left: 10px;  
+  }
+  
+  .textoReceta{
+    margin-top: 15px;
+    margin-left: 35px;
+  }
+
+  .buttonMenuSize{
+    border-color: #FFF;
+    color: #FFF;
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 5px;
+    margin-top: 2.5px;
+  }
+
+  .buttonMenuSizeMarco{
+    border-color: #FFF;
+    height: 15px;
+    width: 12px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 5px;
+    margin-top: 2.5px;
+  }
+
+  .sizeHeader{
+    height: 390px;
+  }
+  .img_turno{
+    width: 100px;
+    height: 100px;
+    font-size: 0.5rem;   
+  }
+  .turno_text_size{
+    font-size: 1.5rem;
+  }
+
+  .fontHomeSubtitulo{
+    font-size: 1.1rem;    
+  }
+
+  .textheader
+{
+    position: absolute;
+    top: 0;
+    font-size: 0.5rem;     
+  }
+
+  .textheaderMenu{
+    /*position: absolute;
+    top: 0;*/
+    font-size: 0.5rem;     
+  }  
+
+  .textheaderLogin{
+    position: absolute;
+    top: 2;
+    right: 0;
+    font-size: 0.5rem;     
+  }
+
+  .fondoNav{
+  background: #000;
+  height: 20px;
+  }
+
+  .fondoNavMenu{
+     
+     background: linear-gradient(45deg, rgba(44,123,144,1) 0%, rgba(44,123,144,1) 16%, rgba(42,108,126,1) 36%, rgba(0,77,69,1) 100%);
+     text-align: right;
+     font-size: 0.8rem;
+  }
+
+  .menuAlineacion{
+    float: right;     
+  }
+
+  .fontImage{
+     font-size: 0.7rem;
+  }
+
+  .fontHomeBody2{
+    color:#303F9F;
+    margin-top: 25px;
+    font-size: 0.7rem;
+    width: 250px;
+    float: right;
+  }  
+
+  .fontHomeBody{
+    margin-top: 25px;
+    font-size: 1.0rem;
+    width: 250px;
+    float: right;
+  }
+  
+  .img_size_carrousel{
+    width: 15px;
+    height: 15px;  
+  }
+
+  .img_home{
+    margin-left: 25px;
+    width: 100px;
+    height: 100px;
+  } 
+  .createdby{
+   font-size: 0.7rem; 
+  }
+
+  .rodri_button{
+    font-size: 0.7rem;
+    width: 80px;
+    height: 25px;
+  }
+
+  .rodri_button_login{
+    font-size: 0.5rem;
+    width: 80px;
+    height: 25px;
+  }
+
+  .contenedor3_telefono {
+        display: flex;
+        align-items: center;
+  }
+  .contenido3_telefono {
+        margin: 0 auto; /* requerido para alineación horizontal */
+  }
+
+  .buttonpreviousnext_telefono{
+    width: 50px;
+    height: 50px;
+  }
+
+  .centrarVerticalHorizontal {
+    /**display: inline;   */
+      display: inline-flex;   
+      align-items: center;
+  }
+
+  h4.fontColorHeader{
+    font-size: 1.3rem;
+  }
+
+  h1.fontColorHeader{
+    font-size: 1.2rem;
+  }
+
+  p.fontColorHeader{
+   font-size: 0.9rem; 
+  }
+
+  li.fontColorHeader{
+   font-size: 0.9rem;  
+  }
+
+  .fontHomeTitulo{
+    font-size: 1.0rem;
+    color:#303F9F;
+  }
+
+  .editText{
+    font-size: 0.9rem; 
+  }
+
+  .fechaNacEditText{
+    margin-left: 15px;
+    width: 80px;
+  }
+  .fechaNacAnioEditText{
+    margin-left: 15px;
+    width: 120px;
+  }
+  .img_medico_center{
+    width: 100px;
+    height: 100px;
+  }
+
+  .fontMedicoNombre{
+    font-size: 1.2rem;
+    color:#303F9F;
+  }
+
+  .divLogin{
+    height: 200px;
+    width: 300px;
+  }
+
+  .marginLeft10px{
+    margin-left: 10px;
+  }
+
+  .marginTop20px{
+    margin-top: 20px;
+  }
+
+  .divMarginCel{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .loginHeader{
+    font-size: 0.3rem;
+    margin-left: -5px;
+    margin-top: -5px; 
+  }
+
+  .inputTextLogin{
+    font-size: 0.6rem;
+    height: 28px;
+    width: 200px;
+  }
+
+  .loginText{
+    font-size: 0.6rem;
+  }
+
+  .medicoTituloTextoCel{
+   font-size: 1.0rem;
+   margin-top: 5px;
+   margin-left: 20px; 
+  }
+
+  .textAlignCenterCel{
+    text-align: center;    
+  }
+
+.rodri_button_agenda{
+  background: transparent;
+  border: none;
+  width: 300px;  
+  height: 25px;
+}
+
+.marginTop50px{
+  margin-top: 50px;
+}
+
+.hiddenLoginCel{
+  visibility: hidden;
+}
+.visibleLoginCel{
+  visibility: visible;
+}
+
+.img_home_2{
+  width: 150px;
+  height: 150px;
+  margin-top: 20px;
+  margin-left: 30%;
+}
+
+.mercadoPagoHeaderTO{
+  margin-left: 5px;  
+  top:0;
+}
+.marginTopCel_25px{
+  margin-top: 25px;    
+}
+.marginTopCel_15px{
+  margin-top: 15px;    
+}
+
+.sinBackgroundMp{
+  background-color: transparent;
+  border: none;
+  width: 92px;
+}
+
+.mercadopago_collapse_250px{
+ width: 300px; 
+}
+
+.mercadopago_collapse_70px{
+ width: 70px; 
+}
+
+.mercadopago_collapse_150px{
+ width: 130px; 
+}
+
+.mercadopago_collapse_100px{
+ width: 100px;  
+}
+
+.mercadopago_collapse_30px{
+ width: 10px; 
+}
+
+.fontVideollamadaTitulo{
+  font-size: 1.4rem;
+  color:#303F9F;
+}
+
+.videollamada_margin_left_50px{  
+  text-align: center;
+}
+.admin_videollamada_sobreturno_cel{
+  visibility: visible;
+  margin-left:10px; 
+}
+
+.admin_videollamada_sobreturno{
+  visibility: hidden; 
+
+}
+
+}
+
+
+@media (max-width:420px){
+  .widthImageCarousel{
+    width: 450px;
+  }
+
+  .width200px{
+    width: 300px;
+  }
+
+  .botonReceta{
+    margin-left: 10px;  
+  }
+  
+  .textoReceta{
+    margin-top: 15px;
+    margin-left: 35px;
+  }
+
+  .buttonMenuSize{
+    border-color: #FFF;
+    color: #FFF;
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 5px;
+    margin-top: 2.5px;
+  }
+
+  .buttonMenuSizeMarco{
+    border-color: #FFF;
+    height: 15px;
+    width: 12px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 5px;
+    margin-top: 2.5px;
+  }
+
+  .sizeHeader{
+    height: 390px;
+  }
+  .img_turno{
+    width: 100px;
+    height: 100px;
+    font-size: 0.5rem;   
+  }
+  .turno_text_size{
+    font-size: 1.5rem;
+  }
+
+  .fontHomeSubtitulo{
+    font-size: 1.1rem;    
+  }
+
+  .textheader{
+    position: absolute;
+    top: 0;
+    font-size: 0.5rem;     
+  }
+
+  .textheaderMenu{
+    /*position: absolute;
+    top: 0;*/
+    font-size: 0.5rem;     
+  }  
+
+  .textheaderLogin{
+    position: absolute;
+    top: 2;
+    right: 0;
+    font-size: 0.5rem;     
+  }
+
+  .fondoNav{
+  /*background: #388E3C;*/
+  height: 20px;
+  }
+
+  .fondoNavMenu{
+     
+     background: linear-gradient(45deg, rgba(44,123,144,1) 0%, rgba(44,123,144,1) 16%, rgba(42,108,126,1) 36%, rgba(0,77,69,1) 100%);
+     text-align: right;
+     font-size: 0.8rem;
+  }
+
+  .menuAlineacion{
+    float: right;     
+  }
+
+  .fontImage{
+     font-size: 0.7rem;
+  }
+
+  .fontHomeBody2{
+    color:#303F9F;
+    margin-top: 25px;
+    font-size: 0.7rem;
+    width: 250px;
+    float: right;
+  }  
+
+  .fontHomeBody{
+    margin-top: 25px;
+    font-size: 1.0rem;
+    width: 250px;
+    float: right;
+  }
+  
+  .img_size_carrousel{
+    width: 15px;
+    height: 15px;  
+  }
+
+  .img_home{
+    margin-left: 25px;
+    width: 100px;
+    height: 100px;
+  } 
+  .createdby{
+   font-size: 0.7rem; 
+  }
+
+  .rodri_button{
+    font-size: 0.7rem;
+    width: 80px;
+    height: 25px;
+  }
+
+  .rodri_button_login{
+    font-size: 0.5rem;
+    width: 80px;
+    height: 25px;
+  }
+
+  .contenedor3_telefono {
+        display: flex;
+        align-items: center;
+  }
+  .contenido3_telefono {
+        margin: 0 auto; /* requerido para alineación horizontal */
+  }
+
+  .buttonpreviousnext_telefono{
+    width: 50px;
+    height: 50px;
+  }
+
+  .centrarVerticalHorizontal {
+    /**display: inline;   */
+      display: inline-flex;   
+      align-items: center;
+  }
+
+  h4.fontColorHeader{
+    font-size: 1.3rem;
+  }
+
+  h1.fontColorHeader{
+    font-size: 1.2rem;
+  }
+
+  p.fontColorHeader{
+   font-size: 0.9rem; 
+  }
+
+  li.fontColorHeader{
+   font-size: 0.9rem;  
+  }
+
+  .fontHomeTitulo{
+    font-size: 1.0rem;
+    color:#303F9F;
+  }
+
+  .editText{
+    font-size: 0.9rem; 
+  }
+
+  .fechaNacEditText{
+    margin-left: 15px;
+    width: 80px;
+  }
+  .fechaNacAnioEditText{
+    margin-left: 15px;
+    width: 120px;
+  }
+  .img_medico_center{
+    width: 100px;
+    height: 100px;
+  }
+
+  .fontMedicoNombre{
+    font-size: 1.2rem;
+    color:#303F9F;
+  }
+
+  .divLogin{
+    height: 200px;
+    width: 300px;
+  }
+
+  .marginLeft10px{
+    margin-left: 10px;
+  }
+
+  .marginTop20px{
+    margin-top: 20px;
+  }
+
+  .divMarginCel{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .loginHeader{
+    font-size: 0.6rem;
+    margin-left: -5px;
+    margin-top: -5px; 
+  }
+
+  .inputTextLogin{
+    font-size: 0.6rem;
+    height: 28px;
+    width: 200px;
+  }
+
+  .loginText{
+    font-size: 0.6rem;
+  }
+
+  .medicoTituloTextoCel{
+   font-size: 1.0rem;
+   margin-top: 5px;
+   margin-left: 20px; 
+  }
+
+  .textAlignCenterCel{
+    text-align: center;    
+  }
+
+.rodri_button_agenda{
+  background: transparent;
+  border: none;
+  width: 300px;  
+  height: 25px;
+}
+
+.marginTop50px{
+  margin-top: 50px;
+}
+
+.hiddenLoginCel{
+  visibility: hidden;
+}
+.visibleLoginCel{
+  visibility: visible;
+}
+
+.img_home_2{
+  width: 150px;
+  height: 150px;
+  margin-top: 20px;
+  margin-left: 30%;
+}
+
+.mercadoPagoHeaderTO{
+  margin-left: 5px;  
+  top:0;
+}
+.marginTopCel_25px{
+  margin-top: 25px;    
+}
+.marginTopCel_15px{
+  margin-top: 15px;    
+}
+
+.sinBackgroundMp{
+  background-color: transparent;
+  border: none;
+  width: 92px;
+}
+
+.mercadopago_collapse_250px{
+ width: 300px; 
+}
+
+.mercadopago_collapse_70px{
+ width: 70px; 
+}
+
+.mercadopago_collapse_150px{
+ width: 130px; 
+}
+
+.mercadopago_collapse_100px{
+ width: 100px;  
+}
+
+.mercadopago_collapse_30px{
+ width: 10px; 
+}
+
+.fontVideollamadaTitulo{
+  font-size: 1.4rem;
+  color:#303F9F;
+}
+
+.videollamada_margin_left_50px{  
+  text-align: center;
+}
+.admin_videollamada_sobreturno_cel{
+  visibility: visible;
+  margin-left:10px; 
+}
+
+.admin_videollamada_sobreturno{
+  visibility: hidden; 
+
+}
+
+}

@@ -1,0 +1,1 @@
+<?php header('Location: /enviar_recordatorio_mail'); ?>

@@ -1,0 +1,17 @@
+/node_modules
+/public/hot
+/public/storage
+/storage/*.key
+/vendor
+.env
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+# Archivos de ayuda para Composer
+.composer-helper.sh
+.composer-check.sh
+README-COMPOSER.md
+CLAVE-SECRETA-WEBHOOK.txt
+database/sql/padelbb_local_dump.sql
