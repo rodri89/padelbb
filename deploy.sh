@@ -30,7 +30,7 @@ fi
 
 # CONFIGURACIÓN EXPLÍCITA PARA HOSTINGER PHP 8.3
 PHP_BIN="/opt/alt/php83/usr/bin/php"
-COMPOSER_CMD="$PHP_BIN /opt/alt/php83/usr/bin/composer"
+COMPOSER_CMD="/opt/alt/php83/usr/bin/composer"
 ARTISAN_CMD="$PHP_BIN artisan"
 
 echo "📦 Instalando dependencias..."
