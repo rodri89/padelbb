@@ -3,7 +3,7 @@
 echo "🔍 Verificando que el despliegue se ejecutó correctamente..."
 echo ""
 
-PROJECT_DIR="/home/u895805914/domains/padelbb.com/public_html/bahiapadel2"
+PROJECT_DIR="/home/u895805914/domains/padelbb.com/public_html"
 cd "$PROJECT_DIR"
 
 LOG_FILE="$PROJECT_DIR/storage/logs/webhook-deploy.log"

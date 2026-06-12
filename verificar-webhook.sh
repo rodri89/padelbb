@@ -4,7 +4,7 @@ echo "🔍 Verificando configuración del webhook..."
 echo ""
 
 # Verificar directorio de logs
-LOG_DIR="/home/u895805914/domains/padelbb.com/public_html/bahiapadel2/storage/logs"
+LOG_DIR="/home/u895805914/domains/padelbb.com/public_html/storage/logs"
 if [ -d "$LOG_DIR" ]; then
     echo "✅ Directorio de logs existe: $LOG_DIR"
 else
@@ -29,7 +29,7 @@ fi
 
 echo ""
 echo "🔍 Verificando deploy.sh..."
-DEPLOY_SCRIPT="/home/u895805914/domains/padelbb.com/public_html/bahiapadel2/deploy.sh"
+DEPLOY_SCRIPT="/home/u895805914/domains/padelbb.com/public_html/deploy.sh"
 if [ -f "$DEPLOY_SCRIPT" ]; then
     echo "✅ deploy.sh existe"
     if [ -x "$DEPLOY_SCRIPT" ]; then
