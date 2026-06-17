@@ -16,3 +16,4 @@ yarn-error.log
 README-COMPOSER.md
 CLAVE-SECRETA-WEBHOOK.txt
 database/sql/padelbb_local_dump.sql
+*firebase-adminsdk*.json

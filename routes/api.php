@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Api\MenuApiController;
 use Illuminate\Http\Request;
 
 /*
@@ -21,6 +22,16 @@ Route::group(['prefix' => 'auth'], function () {
         Route::get('logout', 'AuthController@logout');
         Route::get('user', 'AuthController@user');        
     });
+});
+
+Route::group(['middleware' => 'auth:api'], function () {
+    Route::post('/mobile/devices/register', 'Api\MobileDeviceController@register');
+    Route::post('/mobile/devices/unregister', 'Api\MobileDeviceController@unregister');
+    Route::post('/mobile/firebase-token', 'Api\MobileFirebaseTokenController@store');
+
+    Route::get('/chats/threads', 'Api\ChatThreadController@index');
+    Route::post('/chats/threads', 'Api\ChatThreadController@store');
+    Route::post('/chats/threads/{threadId}/messages', 'Api\ChatMessageController@store');
 });
 
 Route::get('/menu', [MenuApiController::class, 'index']);
