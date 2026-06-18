@@ -117,7 +117,7 @@
             <span>Caja</span></a>
       </li>
       
-      <li class="nav-item">
+      <li class="nav-item d-none">
           <a class="nav-link" href="{{ route('adminfotos') }}">
             <i class="fas fa-fw fa-address-card"></i>
             <span>Fotos</span></a>
@@ -141,7 +141,7 @@
             <span>Config</span></a>
       </li>
 
-      <li class="nav-item">
+      <li class="nav-item d-none">
           <a class="nav-link" href="{{ route('sponsors.index') }}">
             <i class="fas fa-fw fa-ad"></i>
             <span>Sponsors</span></a>
