@@ -445,8 +445,11 @@
 }
 
 .icono_header{
-	width: 180px;
-	height: 60px;	
+	width: auto;
+	max-width: 180px;
+	height: auto;
+	max-height: 60px;
+	object-fit: contain;	
 }
 
 .fixed_button{

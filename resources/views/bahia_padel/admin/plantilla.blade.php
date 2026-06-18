@@ -67,7 +67,7 @@
 
       <!-- Sidebar - Brand -->
       <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">                
-        <img class="icono_header" style="width: 120px; height: 60px" src="{{ asset('bahiapadel/iconos/logo_padel_bb.png') }}" >
+        <img class="icono_header" style="width: auto; max-width: 120px; height: auto; max-height: 60px; object-fit: contain;" src="{{ asset('bahiapadel/iconos/logo_padel_bb.png') }}" >
       </a>
 
       <!-- Divider -->

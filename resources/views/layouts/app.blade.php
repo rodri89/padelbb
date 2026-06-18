@@ -28,7 +28,7 @@
             <div class="container">
                 <div>
                     <a href="{{ route('index') }}" class="text-white">
-                        <img class="icono_header" src="{{ asset('bahiapadel/iconos/logo_padel_bb.png') }}" style="width:120px;height: 60px;">
+                        <img class="icono_header" src="{{ asset('bahiapadel/iconos/logo_padel_bb.png') }}" style="width: auto; max-width: 120px; height: auto; max-height: 60px; object-fit: contain;">
                     </a>
                 </div>
                 <button class="navbar-toggler buttonMenuSizeMarco" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">

@@ -32,9 +32,12 @@ body {
 }
 
 .header_ic {
-    width: 180px; 
-    height: 80px;
+    width: auto;
+    max-width: 180px;
+    height: auto;
+    max-height: 80px;
     margin-left: 200px;
+    object-fit: contain;
 }
 
 .header_btn {
@@ -601,9 +604,12 @@ main .container-fluid > section > .h3,
     margin-right: 10px;
   }
   .header_ic {
-    width: 120px; 
-    height: 60px;
+    width: auto;
+    max-width: 120px;
+    height: auto;
+    max-height: 60px;
     margin-left: 20px;
+    object-fit: contain;
 }
 }
 
