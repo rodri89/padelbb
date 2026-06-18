@@ -7,7 +7,7 @@
     <meta name="author" content="Bahía Padel">
     
     <title>Subir Foto - Bahía Padel</title>
-    <link rel="icon" type="image/x-icon" href="{{ asset('bahiapadel/iconos/bahia_padel_ic.png') }}" />
+    <link rel="icon" type="image/x-icon" href="{{ asset('bahiapadel/iconos/logo_padel_bb.png') }}" />
     
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">

@@ -8,7 +8,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     
     <title >{{'Padel'}}</title>
-    <link rel="icon" type="image/x-icon" href="{{ asset('bahiapadel/iconos/bahia_padel_ic.png') }}" />
+    <link rel="icon" type="image/x-icon" href="{{ asset('bahiapadel/iconos/logo_padel_bb.png') }}" />
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
 
@@ -28,7 +28,7 @@
             <div class="container">
                 <div>
                     <a href="{{ route('index') }}" class="text-white">
-                        <img class="icono_header" src="{{ asset('bahiapadel/iconos/bahia_padel_ic.png') }}" style="width:120px;height: 60px;">                        
+                        <img class="icono_header" src="{{ asset('bahiapadel/iconos/logo_padel_bb.png') }}" style="width:120px;height: 60px;">
                     </a>
                 </div>
                 <button class="navbar-toggler buttonMenuSizeMarco" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">

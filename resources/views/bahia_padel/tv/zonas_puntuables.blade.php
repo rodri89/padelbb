@@ -529,7 +529,7 @@
                                                     @if($row['key'] === $col['key'])
                                                         <td class="diagonal">
                                                             <div class="logo-cell">
-                                                                <img src="{{ asset('bahiapadel/iconos/bahia_padel_ic.png') }}" onerror="this.style.display='none'">
+                                                                <img src="{{ asset('bahiapadel/iconos/logo_padel_bb.png') }}" onerror="this.style.display='none'">
                                                             </div>
                                                         </td>
                                                     @else

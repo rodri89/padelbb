@@ -8,7 +8,7 @@
   <meta name="author" content="Rodrigo Banegas">
 
   <title>@yield('title_header', 'Bahía Pádel')</title>
-  <link rel="icon" type="image/x-icon" href="{{ asset('bahiapadel/iconos/bahia_padel_ic.png') }}" />
+  <link rel="icon" type="image/x-icon" href="{{ asset('bahiapadel/iconos/logo_padel_bb.png') }}" />
 
 <!-- Custom fonts for this template-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous">
@@ -30,7 +30,7 @@
       <div class="container-fluid">
         <!-- Logo a la izquierda -->
         <a class="navbar-brand d-flex align-items-center" href="{{ route('index') }}">
-          <img class="icono_header header_ic" src="{{ asset('bahiapadel/iconos/bahia_padel_ic.png') }}">
+          <img class="icono_header header_ic" src="{{ asset('bahiapadel/iconos/logo_padel_bb.png') }}">
         </a>
         <!-- Botón hamburguesa a la derecha en mobile -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">

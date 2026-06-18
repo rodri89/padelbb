@@ -653,7 +653,7 @@
                 celdasHTML = `
                     <td class="celda-icono">
                         <div class="seleccion-dia-horario" data-celda="1">
-                            <img src="{{ asset('bahiapadel/iconos/bahia_padel_ic.png') }}" style="width:60px; height:60px; opacity:0.3;" alt="Pareja">
+                            <img src="{{ asset('bahiapadel/iconos/logo_padel_bb.png') }}" style="width:60px; height:60px; opacity:0.3;" alt="Pareja">
                         </div>
                     </td>
                     <td>
@@ -692,7 +692,7 @@
                     </td>
                     <td class="celda-icono">
                         <div class="seleccion-dia-horario" data-celda="5">
-                            <img src="{{ asset('bahiapadel/iconos/bahia_padel_ic.png') }}" style="width:60px; height:60px; opacity:0.3;" alt="Pareja">
+                            <img src="{{ asset('bahiapadel/iconos/logo_padel_bb.png') }}" style="width:60px; height:60px; opacity:0.3;" alt="Pareja">
                         </div>
                     </td>
                     <td class="columna-partido-3">
@@ -733,7 +733,7 @@
                     </td>
                     <td class="columna-partido-3 celda-icono">
                         <div class="seleccion-dia-horario" data-celda="9">
-                            <img src="{{ asset('bahiapadel/iconos/bahia_padel_ic.png') }}" style="width:60px; height:60px; opacity:0.3;" alt="Pareja">
+                            <img src="{{ asset('bahiapadel/iconos/logo_padel_bb.png') }}" style="width:60px; height:60px; opacity:0.3;" alt="Pareja">
                         </div>
                     </td>
                     <td class="columna-partido-4" style="display:none;">
@@ -772,7 +772,7 @@
                     </td>
                     <td class="columna-partido-4 celda-icono" style="display:none;">
                         <div class="seleccion-dia-horario" data-celda="14">
-                            <img src="{{ asset('bahiapadel/iconos/bahia_padel_ic.png') }}" style="width:60px; height:60px; opacity:0.3;" alt="Pareja">
+                            <img src="{{ asset('bahiapadel/iconos/logo_padel_bb.png') }}" style="width:60px; height:60px; opacity:0.3;" alt="Pareja">
                         </div>
                     </td>
                 `;
@@ -783,7 +783,7 @@
                 celdasHTML = `
                     <td class="celda-icono">
                         <div class="seleccion-dia-horario" data-celda="1">
-                            <img src="{{ asset('bahiapadel/iconos/bahia_padel_ic.png') }}" style="width:60px; height:60px; opacity:0.3;" alt="Pareja">
+                            <img src="{{ asset('bahiapadel/iconos/logo_padel_bb.png') }}" style="width:60px; height:60px; opacity:0.3;" alt="Pareja">
                         </div>
                     </td>
                     <td>
@@ -812,7 +812,7 @@
                     </td>
                     <td class="celda-icono">
                         <div class="seleccion-dia-horario" data-celda="5">
-                            <img src="{{ asset('bahiapadel/iconos/bahia_padel_ic.png') }}" style="width:60px; height:60px; opacity:0.3;" alt="Pareja">
+                            <img src="{{ asset('bahiapadel/iconos/logo_padel_bb.png') }}" style="width:60px; height:60px; opacity:0.3;" alt="Pareja">
                         </div>
                     </td>
                     <td class="columna-partido-3">
@@ -841,7 +841,7 @@
                     </td>
                     <td class="columna-partido-3 celda-icono">
                         <div class="seleccion-dia-horario" data-celda="9">
-                            <img src="{{ asset('bahiapadel/iconos/bahia_padel_ic.png') }}" style="width:60px; height:60px; opacity:0.3;" alt="Pareja">
+                            <img src="{{ asset('bahiapadel/iconos/logo_padel_bb.png') }}" style="width:60px; height:60px; opacity:0.3;" alt="Pareja">
                         </div>
                     </td>
                 `;

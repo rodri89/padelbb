@@ -9,7 +9,7 @@
   <meta name="author" content="Rodrigo Banegas">
 
   <title>Bahia Padel</title>
-  <link rel="icon" type="image/x-icon" href="{{ asset('bahiapadel/iconos/bahia_padel_ic.png') }}" />
+  <link rel="icon" type="image/x-icon" href="{{ asset('bahiapadel/iconos/logo_padel_bb.png') }}" />
 
 <!-- Custom fonts for this template-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous">
@@ -67,7 +67,7 @@
 
       <!-- Sidebar - Brand -->
       <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">                
-        <img class="icono_header" style="width: 120px; height: 60px" src="{{ asset('bahiapadel/iconos/bahia_padel_ic.png') }}" >        
+        <img class="icono_header" style="width: 120px; height: 60px" src="{{ asset('bahiapadel/iconos/logo_padel_bb.png') }}" >
       </a>
 
       <!-- Divider -->

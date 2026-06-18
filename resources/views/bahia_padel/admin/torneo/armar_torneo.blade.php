@@ -71,7 +71,7 @@
                                     </td>                         
                                     <td>
                                         <div class="seleccion-dia-horario" data-celda="1">
-                                            <img src="{{ asset('bahiapadel/iconos/bahia_padel_ic.png') }}" style="width:60px; height:60px; opacity:0.3;" alt="Pareja">
+                                            <img src="{{ asset('bahiapadel/iconos/logo_padel_bb.png') }}" style="width:60px; height:60px; opacity:0.3;" alt="Pareja">
                                         </div>
                                     </td>                            
                                     <td>
@@ -127,7 +127,7 @@
                                     </td>                            
                                     <td>
                                         <div class="seleccion-dia-horario" data-celda="5">
-                                            <img src="{{ asset('bahiapadel/iconos/bahia_padel_ic.png') }}" style="width:60px; height:60px; opacity:0.3;" alt="Pareja">
+                                            <img src="{{ asset('bahiapadel/iconos/logo_padel_bb.png') }}" style="width:60px; height:60px; opacity:0.3;" alt="Pareja">
                                         </div>
                                     </td>                            
                                     <td class="columna-partido-3">
@@ -184,7 +184,7 @@
                                     </td>                            
                                     <td class="columna-partido-3">
                                         <div class="seleccion-dia-horario" data-celda="9">
-                                            <img src="{{ asset('bahiapadel/iconos/bahia_padel_ic.png') }}" style="width:60px; height:60px; opacity:0.3;" alt="Pareja">
+                                            <img src="{{ asset('bahiapadel/iconos/logo_padel_bb.png') }}" style="width:60px; height:60px; opacity:0.3;" alt="Pareja">
                                         </div>
                                     </td>
                                     <td class="columna-partido-4" style="display:none;">
@@ -242,7 +242,7 @@
                                     </td>
                                     <td class="columna-partido-4" style="display:none;">
                                         <div class="seleccion-dia-horario" data-celda="14">
-                                            <img src="{{ asset('bahiapadel/iconos/bahia_padel_ic.png') }}" style="width:60px; height:60px; opacity:0.3;" alt="Pareja">
+                                            <img src="{{ asset('bahiapadel/iconos/logo_padel_bb.png') }}" style="width:60px; height:60px; opacity:0.3;" alt="Pareja">
                                         </div>
                                     </td>
                                 </tr>
@@ -1307,7 +1307,7 @@
             
             // Las celdas 1, 5, 9 muestran una imagen (imágenes de las parejas)
             $('.seleccion-dia-horario[data-celda="1"], .seleccion-dia-horario[data-celda="5"], .seleccion-dia-horario[data-celda="9"]').removeData('dia').removeData('horario').html(`
-                <img src="{{ asset('bahiapadel/iconos/bahia_padel_ic.png') }}" style="width:60px; height:60px; opacity:0.3;" alt="Pareja">
+                <img src="{{ asset('bahiapadel/iconos/logo_padel_bb.png') }}" style="width:60px; height:60px; opacity:0.3;" alt="Pareja">
             `);
             
             // Asegurar formato por defecto: 3 partidos, 3 parejas
@@ -1637,7 +1637,7 @@
                 // Celdas que siempre muestran imagen
                 if (celdaVisible) {
                     celda.removeData('dia').removeData('horario').html(`
-                        <img src="{{ asset('bahiapadel/iconos/bahia_padel_ic.png') }}" style="width:60px; height:60px; opacity:0.3;" alt="Pareja">
+                        <img src="{{ asset('bahiapadel/iconos/logo_padel_bb.png') }}" style="width:60px; height:60px; opacity:0.3;" alt="Pareja">
                     `);
                 }
             } else if (celdasConHorario.includes(i)) {
