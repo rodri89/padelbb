@@ -34,13 +34,6 @@ return [
       'api_key' => env('SENDGRID_API_KEY'),
     ],
 
-    'firebase' => [
-        'project_id' => env('FIREBASE_PROJECT_ID'),
-        'client_email' => env('FIREBASE_CLIENT_EMAIL'),
-        'private_key' => env('FIREBASE_PRIVATE_KEY') ? str_replace('\\n', "\n", env('FIREBASE_PRIVATE_KEY')) : null,
-        'database_url' => env('FIREBASE_DATABASE_URL'),
-    ],
-
     'sparkpost' => [
         'secret' => env('SPARKPOST_SECRET'),
     ],

@@ -52,10 +52,6 @@
       overflow-y: auto;
     }
   }
-  #logoutModal .modal-footer {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-  }
 </style>
 
 @include('modal.snackbar')
