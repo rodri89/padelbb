@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Api\MenuApiController;
 use Illuminate\Http\Request;
 
 /*
