@@ -9,14 +9,18 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('stock_detalles_venta', function (Blueprint $table) {
-            $table->boolean('es_division')->default(false)->after('stock_venta_participante_id');
+            if (!Schema::hasColumn('stock_detalles_venta', 'es_division')) {
+                $table->boolean('es_division')->default(false)->after('stock_venta_participante_id');
+            }
         });
     }
 
     public function down(): void
     {
         Schema::table('stock_detalles_venta', function (Blueprint $table) {
-            $table->dropColumn('es_division');
+            if (Schema::hasColumn('stock_detalles_venta', 'es_division')) {
+                $table->dropColumn('es_division');
+            }
         });
     }
 };

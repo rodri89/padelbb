@@ -18,11 +18,11 @@
     <div class="alert alert-danger">{{ session('error') }}</div>
 @endif
 
-<div class="container-fluid body_admin text-dark">
-    <p><a href="{{ route('admincaja') }}" class="btn btn-sm btn-secondary">&larr; Volver a Caja</a></p>
+<div class="container-fluid body_admin">
+    <p><a href="{{ route('admincaja') }}" class="btn btn-secondary">&larr; Volver a Caja</a></p>
 
     <div class="card shadow mb-4">
-        <div class="card-header py-3"><h6 class="m-0 font-weight-bold text-primary">Datos de la venta</h6></div>
+        <div class="card-header py-3"><h5 class="m-0 font-weight-bold text-primary">Datos de la venta</h5></div>
         <div class="card-body row">
             <div class="col-md-6">
                 <p><strong>Cliente:</strong> {{ $venta->nombre_cliente }}</p>
@@ -49,14 +49,14 @@
                     <p><strong>Notas:</strong> {{ $venta->notas }}</p>
                 @endif
                 @if($modoGrupo)
-                    <p class="small text-muted mb-0">Ticket <strong>multi-jugador</strong>: el cobro es por jugador; la venta queda pendiente hasta que los cuatro estén pagados (o “sin consumo”).</p>
+                    <p class="caja-texto-small mb-0">Ticket <strong>multi-jugador</strong>: el cobro es por jugador; la venta queda pendiente hasta que los cuatro estén pagados (o “sin consumo”).</p>
                 @endif
             </div>
             <div class="col-md-12 mt-2">
                 @if($venta->estado_pago === 'pagado')
                     <form method="post" action="{{ route('admincaja.venta.continuar', $venta) }}" class="d-inline" onsubmit="return confirm('Se creará un nuevo ticket vinculado a este. ¿Continuar?');">
                         @csrf
-                        <button type="submit" class="btn btn-sm btn-outline-primary">Agregar más productos</button>
+                        <button type="submit" class="btn btn-outline-primary">Agregar más productos</button>
                     </form>
                 @endif
             </div>
@@ -65,9 +65,9 @@
 
     @if($modoGrupo)
     <div class="card shadow mb-4">
-        <div class="card-header py-3"><h6 class="m-0 font-weight-bold text-primary">Jugadores</h6></div>
+        <div class="card-header py-3"><h5 class="m-0 font-weight-bold text-primary">Jugadores</h5></div>
         <div class="card-body p-0">
-            <table class="table table-sm mb-0">
+            <table class="table mb-0">
                 <thead><tr><th>Slot</th><th>Nombre</th><th>Consumido</th><th>Estado</th></tr></thead>
                 <tbody>
                     @foreach($partsSorted as $p)
@@ -92,7 +92,7 @@
     @endif
 
     <div class="card shadow mb-4">
-        <div class="card-header py-3"><h6 class="m-0 font-weight-bold text-primary">Productos</h6></div>
+        <div class="card-header py-3"><h5 class="m-0 font-weight-bold text-primary">Productos</h5></div>
         <div class="card-body p-0">
             <table class="table mb-0">
                 <thead>
@@ -150,9 +150,9 @@
 
     @if($venta->pagos->isNotEmpty())
     <div class="card shadow mb-4">
-        <div class="card-header py-3"><h6 class="m-0 font-weight-bold text-primary">Historial de pagos</h6></div>
+        <div class="card-header py-3"><h5 class="m-0 font-weight-bold text-primary">Historial de pagos</h5></div>
         <div class="card-body p-0">
-            <table class="table table-sm mb-0">
+            <table class="table mb-0">
                 <thead>
                     <tr>
                         <th>Fecha</th>
@@ -194,7 +194,7 @@
                         <div class="d-flex flex-wrap justify-content-between align-items-center mb-2">
                             <div>
                                 <strong>J{{ $p->slot }}</strong> {{ $p->nombre }}
-                                <span class="text-muted small ml-2">{{ $fmtMoney($subPart) }}</span>
+                                <span class="caja-texto-small ml-2">{{ $fmtMoney($subPart) }}</span>
                             </div>
                             @if($p->estado_pago === 'pagado')
                                 <span class="badge badge-success">Ya cobrado{{ $p->metodo_pago ? ' ('.$p->metodo_pago.')' : '' }}</span>
@@ -204,29 +204,29 @@
                             @if((float) $subPart <= 0)
                                 <form method="post" action="{{ route('admincaja.venta.participante.pago', [$venta, $p]) }}" class="d-inline" onsubmit="return confirm('¿Marcar a este jugador como sin consumo?');">
                                     @csrf
-                                    <button type="submit" class="btn btn-outline-secondary btn-sm">Sin consumo</button>
+                                    <button type="submit" class="btn btn-outline-secondary">Sin consumo</button>
                                 </form>
                             @else
                                 <form method="post" action="{{ route('admincaja.venta.participante.pago', [$venta, $p]) }}" class="mb-0">
                                     @csrf
                                     <div class="form-row align-items-end">
                                         <div class="form-group col-md-4 mb-2">
-                                            <label class="small mb-0">Método</label>
-                                            <select name="metodo_pago" class="form-control form-control-sm" required>
+                                            <label class="caja-label mb-0">Método</label>
+                                            <select name="metodo_pago" class="form-control" required>
                                                 <option value="efectivo">Efectivo</option>
                                                 <option value="transferencia">Transferencia</option>
                                             </select>
                                         </div>
                                         <div class="form-group col-md-4 mb-2">
-                                            <label class="small mb-0">Fecha de pago</label>
-                                            <input type="date" name="fecha_pago" class="form-control form-control-sm" value="{{ now()->toDateString() }}">
+                                            <label class="caja-label mb-0">Fecha de pago</label>
+                                            <input type="date" name="fecha_pago" class="form-control" value="{{ now()->toDateString() }}">
                                         </div>
                                         <div class="form-group col-md-4 mb-2">
-                                            <label class="small mb-0">Referencia</label>
-                                            <input type="text" name="referencia_pago" class="form-control form-control-sm" placeholder="Opcional">
+                                            <label class="caja-label mb-0">Referencia</label>
+                                            <input type="text" name="referencia_pago" class="form-control" placeholder="Opcional">
                                         </div>
                                     </div>
-                                    <button type="submit" class="btn btn-success btn-sm">Cobrar {{ $fmtMoney($subPart) }}</button>
+                                    <button type="submit" class="btn btn-success">Cobrar {{ $fmtMoney($subPart) }}</button>
                                 </form>
                             @endif
                         @endif
@@ -264,7 +264,7 @@
                 @endif
             @endif
             <hr class="my-3">
-            <p class="small text-muted mb-2">Si no se va a cobrar esta venta, podés cancelarla: se borra el ticket y el stock vuelve a los productos (solo si no hay productos cobrados).</p>
+            <p class="caja-texto-small mb-2">Si no se va a cobrar esta venta, podés cancelarla: se borra el ticket y el stock vuelve a los productos (solo si no hay productos cobrados).</p>
             <form method="post" action="{{ route('admincaja.venta.destroy', $venta) }}" class="d-inline" onsubmit="return confirm('¿Cancelar este ticket? Se eliminará la venta y se devolverá el stock de todos los productos.');">
                 @csrf
                 @method('DELETE')

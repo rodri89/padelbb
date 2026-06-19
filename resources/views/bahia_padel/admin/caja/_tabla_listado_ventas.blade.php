@@ -4,7 +4,7 @@
         $mostrarVerModal = $mostrarVerModal ?? false;
         $colAcciones = ($mostrarAccionesVerCobrar || $mostrarVerModal);
     @endphp
-    <table class="table table-sm mb-0">
+    <table class="table table-sm mb-0 caja-tabla-listado">
         <thead class="thead-light">
             <tr>
                 <th>ID</th>
@@ -21,6 +21,11 @@
         </thead>
         <tbody>
             @forelse($ventas as $v)
+                @php
+                    $saldoPendiente = $v->relationLoaded('detalles')
+                        ? (float) $v->detalles->where('estado_pago', 'pendiente')->sum('subtotal')
+                        : (float) $v->precio_total;
+                @endphp
                 <tr>
                     <td>#{{ $v->id }}</td>
                     <td>{{ $v->nombre_cliente }}</td>
@@ -32,27 +37,34 @@
                             —
                         @endif
                     </td>
-                    <td class="text-right">{{ $fmtMoney($v->precio_total) }}</td>
+                    <td class="text-right">
+                        @if($v->estado_pago === 'pendiente' && $saldoPendiente > 0 && $saldoPendiente < (float) $v->precio_total)
+                            <span class="text-muted small">{{ $fmtMoney($v->precio_total) }}</span>
+                            <span class="text-danger font-weight-bold">{{ $fmtMoney($saldoPendiente) }}</span>
+                        @else
+                            {{ $fmtMoney($v->precio_total) }}
+                        @endif
+                    </td>
                     <td>{{ $v->metodo_pago }}</td>
                     <td>
                         <span class="badge badge-{{ $v->estado_pago === 'pagado' ? 'success' : 'warning' }}">{{ $v->estado_pago }}</span>
                     </td>
                     @if($mostrarAccionesVerCobrar)
                     <td class="text-center text-nowrap">
-                        <a href="{{ route('admincaja.venta.show', $v) }}" class="btn btn-sm btn-outline-primary">Ver</a>
-                        @if($v->estado_pago === 'pendiente' && (float) $v->precio_total > 0)
-                            <a href="{{ route('admincaja.venta.show', $v) }}" class="btn btn-sm btn-primary ml-1">Cobrar</a>
+                        <a href="{{ route('admincaja.venta.show', $v) }}" class="btn btn-outline-primary">Ver</a>
+                        @if($v->estado_pago === 'pendiente' && $saldoPendiente > 0)
+                            <a href="{{ route('admincaja.venta.show', $v) }}" class="btn btn-primary ml-1">Cobrar</a>
                         @endif
                     </td>
                     @elseif($mostrarVerModal)
                     <td class="text-center text-nowrap">
-                        <button type="button" class="btn btn-sm btn-outline-primary btn-caja-ver-ticket-modal" data-venta-id="{{ $v->id }}">Ver</button>
+                        <button type="button" class="btn btn-outline-primary btn-caja-ver-ticket-modal" data-venta-id="{{ $v->id }}">Ver</button>
                     </td>
                     @endif
                 </tr>
             @empty
                 <tr>
-                    <td colspan="{{ $colAcciones ? 8 : 7 }}" class="text-center text-muted small py-4">No hay registros para este listado.</td>
+                    <td colspan="{{ $colAcciones ? 8 : 7 }}" class="text-center caja-texto-small py-4">No hay registros para este listado.</td>
                 </tr>
             @endforelse
         </tbody>

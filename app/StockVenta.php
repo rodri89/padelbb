@@ -11,7 +11,7 @@ class StockVenta extends Model
     protected $table = 'stock_ventas';
 
     protected $fillable = [
-        'nombre_cliente', 'nombre_turno', 'stock_cancha_id',
+        'nombre_cliente', 'nombre_turno', 'stock_cancha_id', 'es_torneo',
         'fecha_venta', 'hora_venta', 'precio_total',
         'metodo_pago', 'estado_pago', 'fecha_pago', 'referencia_pago', 'notas',
         'stock_venta_id_padre',
@@ -21,6 +21,7 @@ class StockVenta extends Model
         'fecha_venta' => 'date',
         'fecha_pago' => 'date',
         'precio_total' => 'decimal:2',
+        'es_torneo' => 'boolean',
     ];
 
     public function cancha(): BelongsTo

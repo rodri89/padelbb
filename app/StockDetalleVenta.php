@@ -13,14 +13,16 @@ class StockDetalleVenta extends Model
 
     protected $fillable = [
         'stock_venta_id', 'stock_producto_id', 'cantidad',
-        'precio_unitario', 'subtotal', 'created_at',
+        'precio_unitario', 'subtotal', 'created_at', 'updated_at',
         'stock_venta_participante_id', 'es_division', 'estado_pago',
+        'stock_historial_pago_id',
     ];
 
     protected $casts = [
         'precio_unitario' => 'decimal:2',
         'subtotal' => 'decimal:2',
         'created_at' => 'datetime',
+        'updated_at' => 'datetime',
     ];
 
     public function venta(): BelongsTo
@@ -36,5 +38,10 @@ class StockDetalleVenta extends Model
     public function participante(): BelongsTo
     {
         return $this->belongsTo(StockVentaParticipante::class, 'stock_venta_participante_id');
+    }
+
+    public function pago(): BelongsTo
+    {
+        return $this->belongsTo(StockHistorialPago::class, 'stock_historial_pago_id');
     }
 }

@@ -2,7 +2,7 @@
     $modoGrupo = $venta->participantes && $venta->participantes->isNotEmpty();
     $partsSorted = $modoGrupo ? $venta->participantes->sortBy('slot')->values() : collect();
 @endphp
-<div class="text-dark small">
+<div class="caja-texto">
     <div class="row mb-3">
         <div class="col-md-6">
             <p class="mb-1"><strong>Cliente:</strong> {{ $venta->nombre_cliente }}</p>
@@ -23,7 +23,7 @@
     </div>
 
     @if($modoGrupo)
-        <h6 class="font-weight-bold border-bottom pb-1 mb-2">Jugadores</h6>
+        <h5 class="font-weight-bold border-bottom pb-1 mb-2">Jugadores</h5>
         <div class="table-responsive mb-3">
             <table class="table table-sm table-bordered mb-0">
                 <thead class="thead-light"><tr><th>Slot</th><th>Nombre</th><th>Consumido</th><th>Estado</th></tr></thead>
@@ -48,7 +48,7 @@
         </div>
     @endif
 
-    <h6 class="font-weight-bold border-bottom pb-1 mb-2">Productos</h6>
+    <h5 class="font-weight-bold border-bottom pb-1 mb-2">Productos</h5>
     <div class="table-responsive mb-3">
         <table class="table table-sm table-bordered mb-0">
             <thead class="thead-light">
@@ -69,14 +69,14 @@
                         <td>{{ $fmtMoney($d->subtotal) }}</td>
                     </tr>
                 @empty
-                    <tr><td colspan="{{ $modoGrupo ? 5 : 4 }}" class="text-center text-muted">Sin líneas</td></tr>
+                    <tr><td colspan="{{ $modoGrupo ? 5 : 4 }}" class="text-center caja-texto-small">Sin líneas</td></tr>
                 @endforelse
             </tbody>
         </table>
     </div>
 
     @if($venta->pagos->isNotEmpty())
-        <h6 class="font-weight-bold border-bottom pb-1 mb-2">Historial de pagos</h6>
+        <h5 class="font-weight-bold border-bottom pb-1 mb-2">Historial de pagos</h5>
         <div class="table-responsive mb-0">
             <table class="table table-sm table-bordered mb-0">
                 <thead class="thead-light">

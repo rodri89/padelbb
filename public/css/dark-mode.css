@@ -642,3 +642,112 @@ body.dark-mode #caja-resumen-detalle .table tbody th {
 body.dark-mode #caja-resumen-detalle .card-header {
   color: #e8eaed !important;
 }
+
+/* Caja admin: tabla de listado general */
+body.dark-mode .caja-tabla-listado {
+  color: #e8eaed;
+}
+body.dark-mode .caja-tabla-listado thead.thead-light th {
+  background-color: #2d2d2d !important;
+  color: #e8eaed !important;
+  border-color: #3d3d3d !important;
+}
+body.dark-mode .caja-tabla-listado td,
+body.dark-mode .caja-tabla-listado th {
+  border-color: #3d3d3d !important;
+}
+
+/* Caja admin: cards de tickets */
+body.dark-mode .ticket-card .card-header {
+  background-color: #252525;
+  border-color: #3d3d3d;
+}
+body.dark-mode .ticket-card .card-body {
+  color: #e8eaed;
+}
+body.dark-mode .ticket-card .border {
+  border-color: #3d3d3d !important;
+}
+body.dark-mode .ticket-card .bg-light {
+  background-color: #2d2d2d !important;
+}
+body.dark-mode .ticket-card .ticket-jugador-panel.border {
+  border-color: #3d3d3d !important;
+}
+body.dark-mode .ticket-card .border-top {
+  border-top-color: #3d3d3d !important;
+}
+
+/* Caja admin: inputs dentro de tickets */
+body.dark-mode .ticket-card .form-control:disabled,
+body.dark-mode .ticket-card .form-control[readonly] {
+  background-color: #252525;
+  color: #e0e0e0;
+}
+
+/* Caja admin: badges en tabs de grupo */
+body.dark-mode .ticket-grupo-tabs .badge-caja-jugador.badge-warning {
+  background-color: #b38600;
+  color: #1a1a1a;
+}
+body.dark-mode .ticket-grupo-tabs .badge-caja-jugador.badge-light {
+  background-color: #4d4d4d;
+  color: #e0e0e0;
+}
+
+/* Caja admin: texto general */
+body.dark-mode .caja-texto {
+  color: #e8eaed;
+}
+body.dark-mode .caja-label {
+  color: #e8eaed;
+}
+
+/* Caja admin: hover dropdown productos */
+body.dark-mode .hover-bg-light:hover {
+  background-color: #3d3d3d !important;
+}
+
+/* Caja admin: headers de tarjetas (nombre cliente y total) */
+body.dark-mode .ticket-card-header-toggle {
+  color: #e8eaed;
+}
+body.dark-mode .ticket-card-header-toggle .text-muted,
+body.dark-mode .ticket-card-header-toggle .ticket-card-cancha-meta {
+  color: #b0b0b0 !important;
+}
+
+/* Caja admin: modal de ticket */
+body.dark-mode #modal-caja-ver-ticket-body {
+  color: #e8eaed;
+}
+body.dark-mode #modal-caja-ver-ticket-body .text-muted {
+  color: #b0b0b0 !important;
+}
+
+/* Caja admin: botones cancha */
+body.dark-mode .btn-cancha-caja.active {
+  background-color: #0066cc;
+  border-color: #0055bb;
+  color: #ffffff;
+}
+
+/* Caja admin: card header estilos */
+body.dark-mode .card-header .font-weight-bold.text-primary {
+  color: #6ba3ff !important;
+}
+body.dark-mode .card-header .font-weight-bold.text-danger {
+  color: #ff6b6b !important;
+}
+body.dark-mode .card-header .font-weight-bold.text-success {
+  color: #6bdb91 !important;
+}
+body.dark-mode .card-header .font-weight-bold.text-warning {
+  color: #ffd166 !important;
+}
+body.dark-mode .card-header .font-weight-bold.text-info {
+  color: #6ec8d8 !important;
+}
+body.dark-mode .card-header .font-weight-bold.text-secondary {
+  color: #b0b0b0 !important;
+}

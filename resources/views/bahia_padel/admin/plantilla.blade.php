@@ -116,6 +116,12 @@
             <i class="fas fa-fw fa-cash-register"></i>
             <span>Caja</span></a>
       </li>
+
+      <li class="nav-item">
+          <a class="nav-link" href="{{ route('adminturnosfijos') }}">
+            <i class="fas fa-fw fa-clock"></i>
+            <span>Turnos Fijos</span></a>
+      </li>
       
       <li class="nav-item d-none">
           <a class="nav-link" href="{{ route('adminfotos') }}">
