@@ -269,6 +269,61 @@ Route::get('terms_conditions_web', function () {
     return view('terms_conditions.terms_web');
 })->name('terms.conditions.web');
 
+Route::get('delete_account', function () {
+    return view('terms_conditions.delete_account');
+})->name('delete.account');
+
+// Endpoint para procesar la solicitud
+Route::post('api/delete-account-request', function (Request $request) {
+    $validated = $request->validate([
+        'email' => 'required|email',
+        'reason' => 'nullable|string',
+        'comments' => 'nullable|string'
+    ]);
+
+    // Aquí puedes:
+    // 1. Enviar un email de notificación
+    // 2. Guardar en una tabla de solicitudes
+    // 3. O simplemente enviar un email
+
+    try {
+        // Opción 1: Enviar email directamente
+        Mail::raw(
+            "Se ha solicitado eliminar la cuenta de: {$validated['email']}\n" .
+            "Motivo: {$validated['reason']}\n" .
+            "Comentarios: {$validated['comments']}\n" .
+            "Fecha: " . now()->toDateTimeString(),
+            function ($message) {
+                $message->to('rebonlinebb@gmail.com')
+                        ->subject('Solicitud de Eliminación de Cuenta - Padel Match');
+            }
+        );
+
+        // Opción 2: Guardar en base de datos
+        // DB::table('delete_account_requests')->insert([
+        //     'email' => $validated['email'],
+        //     'reason' => $validated['reason'],
+        //     'comments' => $validated['comments'],
+        //     'status' => 'pending',
+        //     'created_at' => now()
+        // ]);
+
+        return response()->json([
+            'success' => true,
+            'message' => 'Solicitud enviada correctamente'
+        ]);
+
+    } catch (\Exception $e) {
+        // Log del error
+        \Log::error('Error en solicitud de eliminación: ' . $e->getMessage());
+
+        return response()->json([
+            'success' => false,
+            'message' => 'Error al procesar la solicitud'
+        ], 500);
+    }
+})->name('delete.account.request');
+
 Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
 Route::post('login', 'Auth\LoginController@login');
 Route::post('logout', 'Auth\LoginController@logout')->name('logout');

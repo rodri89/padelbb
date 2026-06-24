@@ -366,16 +366,16 @@
         <p>Implementamos medidas de seguridad técnicas y organizativas apropiadas para proteger tus datos personales contra el acceso no autorizado, la alteración, divulgación o destrucción. Esto incluye el cifrado de datos en tránsito y en reposo, y controles de acceso rigurosos a nuestros sistemas.</p>
     </div>
 
-    <!-- SECCIÓN 6 -->
+    <!-- Sección 6. Retención y Eliminación de Datos -->
     <div class="section">
         <div class="section-title">
             <span class="section-number">6</span>
             Retención y Eliminación de Datos
         </div>
         <ul>
-            <li><strong>Período de Retención:</strong> Conservamos tus datos personales mientras mantengas una cuenta activa en <strong>PadelBB</strong>. Si eliminas tu cuenta, eliminaremos o anonimizaremos tus datos de acuerdo con nuestros plazos de retención.</li>
+            <li><strong>Período de Retención:</strong> Conservamos tus datos personales mientras mantengas una cuenta activa en <strong>PadelBB</strong>.</li>
+            <li><strong>Solicitud de Eliminación:</strong> Puedes solicitar la eliminación de tu cuenta y de todos tus datos personales a través de nuestro <a href="https://padelbb.com/delete-account">formulario de eliminación de cuenta</a> o contactándonos a <a href="mailto:rebonlinebb@gmail.com">rebonlinebb@gmail.com</a>.</li>
             <li><strong>Datos de Chat:</strong> Los mensajes de los chats se conservan mientras el partido o la conversación esté activa. Una vez finalizado el partido o pasadas 24 horas, se eliminan automáticamente.</li>
-            <li><strong>Solicitud de Eliminación:</strong> Puedes solicitar la eliminación de tu cuenta y de todos tus datos personales desde la sección de configuración de la App o contactándonos a nuestro correo de privacidad.</li>
         </ul>
     </div>
 
