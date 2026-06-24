@@ -261,6 +261,14 @@ Route::group(['middleware' => ['auth', 'usuarioPadel']], function () {
 	
 });
 
+Route::get('terms_conditions_mobile', function () {
+    return view('terms_conditions.terms_mobile');
+})->name('terms.conditions.mobile');
+
+Route::get('terms_conditions_web', function () {
+    return view('terms_conditions.terms_web');
+})->name('terms.conditions.web');
+
 Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
 Route::post('login', 'Auth\LoginController@login');
 Route::post('logout', 'Auth\LoginController@logout')->name('logout');
