@@ -269,6 +269,10 @@ Route::get('terms_conditions_web', function () {
     return view('terms_conditions.terms_web');
 })->name('terms.conditions.web');
 
+Route::get('terms_conditions', function () {
+    return view('terms_conditions.terms_conditions');
+})->name('terms.conditions');
+
 Route::get('delete_account', function () {
     return view('terms_conditions.delete_account');
 })->name('delete.account');

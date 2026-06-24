@@ -261,7 +261,7 @@
     <!-- Formulario -->
     <div id="formContainer">
         <div class="header">
-            <div class="logo">Padel<span>BB</span></div>
+            <div class="logo">Padel<span>MATCH</span></div>
             <h1>Eliminar Cuenta</h1>
             <p>Solicita la eliminación de tu cuenta y datos personales</p>
         </div>
@@ -344,9 +344,9 @@
 
     <div class="footer">
         <p>
-            <a href="https://padelbb.com/privacy">Política de Privacidad</a>
+            <a href="https://padelbb.com/terms_conditions_mobile">Política de Privacidad</a>
             &nbsp;·&nbsp;
-            <a href="https://padelbb.com/terms">Términos y Condiciones</a>
+            <a href="https://padelbb.com/terms_conditions">Términos y Condiciones</a>
         </p>
     </div>
 </div>
